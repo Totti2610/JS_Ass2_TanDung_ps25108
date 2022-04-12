@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="giohang.css">
+    <title>Document</title>
+
+
+</head>
+<body>
+
+
+    <div class="giohang">
+        <a onclick="showcart()"><img src="images/cart.png"><span id="countsp">0</span></a>
+    </div>
+    <div id="showcart",>
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+                <th>Xóa</th>
+            </tr>
+            <tbody id="mycart">
+
+            </tbody>
+
+        </table>
+    </div> -->
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1> SIÊU THỊ TRỰC TUYẾN</h1>
+        </div>
+
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="#">Giỏ hàng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="row">
+                <div class="banner mb">
+                    <img src="images/banner.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="boxsp mr">
+                    <div class="row img"><img src="image/g1.jpg" alt=""></div>
+                    <p>$<span>10</span></p>
+                    <a href="#">Nike Blazer Mid 77 Have A Good Game</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this), laydon()">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="image/g2.jpg" alt=""></div>
+                    <p>$<span>20</span></p>
+                    <a href="#">Jordan 1 Mid Incredible Hulk (GS)</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this), laydon()">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="image/g3.jpg" alt=""></div>
+                    <p>$<span>30</span></p>
+                    <a href="#">Nike Air Max 95 OG ‘Neon’ 2015</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this),laydon() ">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="image/g4.jpg" alt=""></div>
+                    <p>$<span>40</span></p>
+                    <a href="#">Jordan 1 Mid Multi-Color Swoosh</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this), laydon()">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="image/g5.jpg" alt=""></div>
+                    <p>$<span>50</span></p>
+                    <a href="#">Adidas Yeezy Boots 380 GZ8668</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this), laydon()">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="image/g6.jpeg" alt=""></div>
+                    <p>$<span>60</span></p>
+                    <a href="#">PEACEMINUSONE x Converse Chuck 70 Black</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this), laydon()">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="image/g7.jpg" alt=""></div>
+                    <p>$<span>70</span></p>
+                    <a href="#">Fear of God x Slip-On 47 DX ,Collection 2 Black White</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this), laydon()">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="image/g8.jpeg" alt=""></div>
+                    <p>$<span>80</span></p>
+                    <a href="#">Nike Air Force 1 Low ’07 White University Red shoes</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this), laydon()">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="image/g9.jpeg" alt=""></div>
+                    <p>$<span>90</span></p>
+                    <a href="#">Air Jordan 1 Rebellionaire</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this), laydon()">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/cart.js"></script>
+</body>
+</html>
+
+<script>
+    document.getElementById("showcart").style.display="none";
+    var arrhinh = [
+    "image/1.jpg",
+    "image/2.jpg",
+    "image/3.jpg",
+    "image/4.jpg",
+    "image/5.jpg",
+    "image/6.jpg",
+    "image/7.jpg",
+    "image/8.jpg",
+    "image/9.jpg",
+]
+var index = 8;
+
+/*function prev() {
+index--;
+if (index < 0) { index = arrhinh.length - 1; }
+var hinh = document.getElementById("hinh");
+hinh.src = arrhinh[index];
+if (index == 0) { index = 8 };
+document.getElementById("sohinh").innerHTML = "" + index + "/8";
+}
+
+function next() {
+index++;
+if (index >= arrhinh.length) { index = 0; }
+var hinh = document.getElementById("hinh");
+hinh.src = arrhinh[index];
+if (index == 0) { indexmoi = 8 }
+else { indexmoi = index }
+document.getElementById("sohinh").innerHTML = "" + indexmoi + "/8";
+}
+setInterval("next()", 3500); */
+
+function themvaogiohang(x) {
+var arrGH = new Array();
+var gh_str = sessionStorage.getItem("ssgiohang");
+    if (gh_str != null) { arrGH = JSON.parse(gh_str); }
+var countsp =sessionStorage.getItem("countsp");
+    if(countsp==null){countsp=0};
+var boxsp = x.parentElement.children;
+var hinh = boxsp[0].children[0].src;
+var gia = boxsp[1].children[0].innerText;
+var tensp = boxsp[2].innerText;
+var soluong = parseInt(boxsp[3].value);
+var sp = new Array(hinh, tensp, gia, soluong);
+var coroi = 0;
+for (let i = 0; i < arrGH.length;i++) {
+    if (arrGH[i][1] == tensp) {
+        var sl = arrGH[i][3];
+        sl += soluong;
+        arrGH[i][3] = sl;
+        coroi = 1;
+        break;
+    }
+}
+if (coroi == 0) {
+    arrGH.push(sp);
+    countsp++;
+}
+sessionStorage.setItem("ssgiohang", JSON.stringify(arrGH));
+sessionStorage.setItem("countsp", countsp);
+showcountsp();
+}
+
+
+function laydon() {
+var gh_str = sessionStorage.getItem("ssgiohang");
+var giohang = JSON.parse(gh_str);
+var ttgh = "";
+var tong = 0;
+for (let i = 0; i < giohang.length; i++) {
+    var tt = giohang[i][2] * giohang[i][3];
+    tong += tt;
+    ttgh += `
+    <tr>
+    <td>${i + 1}</td>
+    <td><img src="${giohang[i][0]}"></td>
+    <td>${giohang[i][1]}</td>
+    <td>${giohang[i][2]}</td>
+    <td><input type="number" min="0" max="10" value="${giohang[i][3]}"onchange="tinhlaidon(this);"></td>
+    <td>${tt}</td>
+    </tr>`
+}
+ttgh += `
+<tr>
+    <th colspan="5">Tổng đơn hàng</th>
+    <th id="tongtien">${tong}</th>
+</tr>`
+document.getElementById("mycart").innerHTML = ttgh
+}
+
+
+function tinhlaidon(x) {
+var gh_str = sessionStorage.getItem("ssgiohang");
+var giohang = JSON.parse(gh_str);
+var tr = x.parentElement.parentElement;
+var dg = parseInt(tr.children[3].innerHTML);
+var sl = x.value;
+var tt = parseInt(tr.children[5].innerHTML);
+var tongdon = document.getElementById("tongtien").innerText;
+tongdon -= tt;
+var tensp = tr.children[2].innerText;
+if (sl == 0) {
+dongy = confirm("Về 0 chúng tôi rest hiểu ko");
+    if (dongy == true) {
+        tr.remove();
+    }
+    for (let i = 0; i < giohang.length; i++) {
+        if (giohang[i][1] == tensp) {
+            giohang.splice(i, 1);
+        }
+    }
+    var countsp = parseInt(sessionStorage.getItem("countsp") - 1);
+    sessionStorage.setItem("countsp", countsp);
+    showcountsp();
+} else {
+    for (let i = 0; i < giohang.length; i++) {
+        if (giohang[i][1] == tensp) {
+            giohang[i][3] = sl;
+        }
+    }
+    tt = dg * sl;
+    tr.children[5].innerHTML = tt;
+    tongdon += tt;
+}
+document.getElementById("tongtien").innerHTML = tongdon;
+sessionStorage.setItem("ssgiohang", JSON.stringify(giohang));
+} function showcountsp() {
+var countsp = sessionStorage.getItem("countsp");
+if (countsp == null) countsp = 0;
+document.getElementById("countsp").innerHTML = countsp;
+}
+</script>
+
+<script>
+    function showcart(){
+
+        var x = document.getElementById("showcart");
+        if(x.style.display == "block"){
+            x.style.display = "none";
+
+        }else{
+            x.style.display == "block";
+        }
+        laydon();
+    }
+</script>
